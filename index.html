@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="js/main.js" type="module" defer></script>
+
+</head>
+<body>
+  <div id="logo"><img src="images/logo.svg" alt=""></div>
+ <main>
+  <div id="inputs" class="grid-item">
+    <div class="input">
+      <label for="bill">Bill</label>      
+      <input class="input-number" type="text" id="bill">
+    </div>
+    <div class="input">
+      <label for="">Select Tip %</label>
+      <div class="tipButtons">
+        <button class="fivePercent">5%</button>
+        <button class="tenPercent">10%</button>
+        <button class="fifteenPercent">15%</button>
+        <button class="twentyFivePercent">25%</button>
+        <button class="fiftyPercent">50%</button>
+        <input class="input-number" id="custom" type="text" placeholder="Custom">
+      </div>
+    </div>
+    <div class="input">
+      <label for="numberPeople">Number People</label>
+      <input class="input-number" type="text" id="numberPeople">
+    </div>
+  </div>
+  <div id="preview" class="grid-item">
+    <div class="totais">
+      <div class="result">
+        <div class="values">
+          <span class="title">Tip Ancount</span>
+          <span class="subtitle">/ person</span>
+        </div>
+        <span class="value tipAncount">R$00.00</span>
+      </div>
+      <div class="result">
+        <div class="values">
+          <span class="title">Total</span>
+          <span class="subtitle">/ person</span>
+        </div>
+        <span class="value valueTotal">R$00.00</span>
+      </div>
+    </div>
+    <button class="resetButton">RESET</button>
+  </div>
+ </main>
+</body>
+</html>
